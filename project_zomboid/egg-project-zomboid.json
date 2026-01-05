@@ -84,8 +84,7 @@
             "user_editable": true,
             "rules": [
                 "required",
-                "string",
-                "max:20"
+                "numeric"
             ]
         },
         {
@@ -98,8 +97,7 @@
             "user_editable": false,
             "rules": [
                 "required",
-                "string",
-                "max:20"
+                "numeric"
             ]
         },
         {
@@ -112,8 +110,7 @@
             "user_editable": false,
             "rules": [
                 "required",
-                "string",
-                "max:20"
+                "numeric"
             ]
         },
         {
@@ -143,6 +140,33 @@
                 "string",
                 "max:20"
             ]
-        }
+        },
+        {
+            "sort": 9,
+            "name": "RCON port",
+            "description": "Set RCON port. Default 27015.",
+            "env_variable": "RCON_PORT",
+            "default_value": "27015",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "nullable",
+                "numeric"
+            ]
+        },
+        {
+            "sort": 10,
+            "name": "RCON password",
+            "description": "Set RCON password.",
+            "env_variable": "RCON_PASSWORD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": [
+                "nullable",
+                "string",
+                "max:32"
+            ]
+        },
     ]
 }
